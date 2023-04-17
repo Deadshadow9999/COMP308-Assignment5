@@ -80,25 +80,6 @@ function App() {
               : ""}
           </p>
         </div>
-        // <Fragment>
-        //   passage
-        //   <textarea ref={passageRef} rows="30" cols="100"></textarea>
-        //   Ask a question
-        //   <input
-        //     ref={questionRef}
-        //     onKeyPress={answerQuestion}
-        //     size="80"
-        //   ></input>
-        //   answers
-        //   {answer
-        //     ? answer.map((ans, idx) => (
-        //         <div>
-        //           <b>Answer{idx + 1} = </b>
-        //           {ans.text} {ans.score}
-        //         </div>
-        //       ))
-        //     : ""}
-        // </Fragment>
       )}
     </div>
   );
