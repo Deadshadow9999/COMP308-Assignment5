@@ -33,10 +33,6 @@ function App() {
       setAnswer(answers);
       console.log(answers);
     }
-    else
-    {
-      alert("Please fill in all required fields");
-    }
   };
 
   useEffect(() => {
