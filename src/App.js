@@ -44,7 +44,7 @@ function App() {
       {model == null ? (
         <div>
           <img src={loading} alt="loading"></img>
-          <div>Loading Mode... Please waitl</div>
+          <div>Loading Model... Please waitl</div>
         </div>
       ) : (
         <div>
@@ -70,16 +70,8 @@ function App() {
             </Button>
           </Form>
           <p>
-            <label>answers:{" "}</label>
-            {answer
-              ? answer.map((ans, idx) => (
-                  <div>
-                    <b>Answer {idx + 1}: = </b>
-                    {ans.text} 
-                    <br/>Score: {ans.score}
-                  </div>
-                ))
-              : ""}
+            <label><b>Answer:{" "}</b></label>
+            <b>{answer[0].text}</b>
           </p>
         </div>
       )}
