@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/COMP308-Assignment5/static/css/main.756af292.css",
+    "main.js": "/COMP308-Assignment5/static/js/main.74d1233f.js",
+    "static/js/787.1297efdb.chunk.js": "/COMP308-Assignment5/static/js/787.1297efdb.chunk.js",
+    "static/media/loading_symbol.gif": "/COMP308-Assignment5/static/media/loading_symbol.c1b8565f12c3c976ba01.gif",
+    "index.html": "/COMP308-Assignment5/index.html",
+    "main.756af292.css.map": "/COMP308-Assignment5/static/css/main.756af292.css.map",
+    "main.74d1233f.js.map": "/COMP308-Assignment5/static/js/main.74d1233f.js.map",
+    "787.1297efdb.chunk.js.map": "/COMP308-Assignment5/static/js/787.1297efdb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.756af292.css",
+    "static/js/main.74d1233f.js"
+  ]
+}
