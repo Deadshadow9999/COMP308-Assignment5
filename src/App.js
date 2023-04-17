@@ -70,10 +70,15 @@ function App() {
             </Button>
           </Form>
 
-          <label>Answer</label>
-          <textarea readOnly>
-            {answer[0].text}
-          </textarea>
+          {answer ? (
+            <div>
+              <label>Answer:</label>
+              <textarea readOnly>{answer[0].text}</textarea>
+            </div>
+        
+      ) : (
+        ''
+      )}
         </div>
       )}
     </div>
