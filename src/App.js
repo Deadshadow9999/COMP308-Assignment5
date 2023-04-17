@@ -1,6 +1,6 @@
 import * as tf from "@tensorflow/tfjs";
 import * as qna from "@tensorflow-models/qna";
-import loading from "./loading_symbol.gif";
+import loading from "./102-wifi-solid.gif"
 import "./App.css";
 import { useEffect, useState, useRef } from "react";
 import { Fragment } from "react";
