@@ -13,7 +13,7 @@ import Button from "react-bootstrap/Button";
 function App() {
   const passageRef = useRef(null);
   const questionRef = useRef(null);
-  const [answer, setAnswer] = useState();
+  const [answer, setAnswer] = useState("");
   const [model, setModel] = useState(null);
 
   const loadModel = async () => {
