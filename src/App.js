@@ -14,19 +14,16 @@ function App() {
   const questionRef = useRef(null);
   const [answer, setAnswer] = useState();
   const [model, setModel] = useState(null);
+
   const loadModel = async () => {
     const loadedModel = await qna.load();
     setModel(loadedModel);
     console.log("Model loaded");
   };
 
-  useEffect(() => {
-    loadModel();
-  }, []);
-
   const answerQuestion = async (e) => {
     e.preventDefault();
-    console.log("AQ called");
+    console.log("Submit requested");
     if (model !== null) {
       console.log("Question submitted.");
       const passage = passageRef.current.value;
@@ -37,12 +34,17 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    loadModel();
+  }, []);
+
   return (
     <div className="App">
+      <h1>COMP308 - Assignment 5</h1>
       {model == null ? (
         <div>
           <img src={loading} alt="loading"></img>
-          <div>Model Loading</div>
+          <div>Loading Mode ... Please waitl</div>
         </div>
       ) : (
         <div>
@@ -52,7 +54,7 @@ function App() {
               controlId="exampleForm.ControlTextarea1"
             >
               <Form.Label>Text Passage</Form.Label>
-              <Form.Control as="textarea" rows={12} ref={passageRef} />
+              <Form.Control as="textarea" placeholder="Enter a passage" rows={12} ref={passageRef} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
