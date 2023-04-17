@@ -71,7 +71,13 @@ function App() {
           </Form>
           <p>
             <label><b>Answer:{" "}</b></label>
-            <b>{answer[0].text}</b>
+            {answer ? (
+        <div>
+          <b>{answer[0].text}</b> 
+        </div>
+      ) : (
+        ''
+      )}
           </p>
         </div>
       )}
