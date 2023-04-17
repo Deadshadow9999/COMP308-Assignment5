@@ -69,16 +69,18 @@ function App() {
               Submit Question
             </Button>
           </Form>
-
-          {answer ? (
-            <div>
-              <label>Answer:</label>
-              <textarea readOnly>{answer[0].text}</textarea>
-            </div>
-        
-      ) : (
-        ''
-      )}
+          <p>
+            answers:{" "}
+            {answer
+              ? answer.map((ans, idx) => (
+                  <div>
+                    <b>Answer {idx + 1}: = </b>
+                    {ans.text} 
+                    <br/>Score: {ans.score}
+                  </div>
+                ))
+              : ""}
+          </p>
         </div>
       )}
     </div>
