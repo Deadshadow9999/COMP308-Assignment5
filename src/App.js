@@ -59,15 +59,16 @@ function App() {
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Label>Text Passage</Form.Label>
-              <Form.Control as="textarea" placeholder="Enter a passage" rows={12} ref={passageRef} />
+              <Form.Label><b>Text Passage</b></Form.Label>
+              <Form.Control as="textarea" required placeholder="Enter a passage" rows={12} ref={passageRef} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Ask a question</Form.Label>
+              <Form.Label><b>Ask a question</b></Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Type in a question"
+                required
                 ref={questionRef}
               />
             </Form.Group>
