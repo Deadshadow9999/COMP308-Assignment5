@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div id="background" className="App">
-      <table>
+      <table className="center">
         <tr>
       <th><img src={bookGif} alt="book gif"></img></th>
       <th><h1>COMP308 - Assignment 5</h1></th>
