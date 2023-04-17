@@ -1,6 +1,7 @@
 import * as tf from "@tensorflow/tfjs";
 import * as qna from "@tensorflow-models/qna";
 import loading from "./102-wifi-solid.gif"
+import bookGif from "./19-book-solid.gif"
 import "./App.css";
 import { useEffect, useState, useRef } from "react";
 import { Fragment } from "react";
@@ -40,7 +41,12 @@ function App() {
 
   return (
     <div id="background" className="App">
-      <h1>COMP308 - Assignment 5</h1>
+      <table>
+        <tr>
+      <th><img src={bookGif} alt="book gif"></img></th>
+      <th><h1>COMP308 - Assignment 5</h1></th>
+      </tr>
+      </table>
       {model == null ? (
         <div>
           <img src={loading} alt="loading"></img>
