@@ -44,7 +44,7 @@ function App() {
       {model == null ? (
         <div>
           <img src={loading} alt="loading"></img>
-          <div>Loading Model... Please waitl</div>
+          <div>Loading Model... Please wait</div>
         </div>
       ) : (
         <div>
@@ -73,6 +73,7 @@ function App() {
             <label><b>Answer:{" "}</b></label>
             {answer ? (
         <div>
+          <br></br>
           <b>{answer[0].text}</b> 
         </div>
       ) : (
