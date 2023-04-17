@@ -39,7 +39,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div id="background" className="App">
       <h1>COMP308 - Assignment 5</h1>
       {model == null ? (
         <div>
